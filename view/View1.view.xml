@@ -7,7 +7,7 @@
 		<pages>
 			<Page title="{i18n>homePageTitle}">
 				<content>
-					<mvc:XMLView viewName="Walkthrough.view.helloPanel"/>
+					<mvc:XMLView viewName="Walkthrough.view.HelloPanel"/>
 				</content>
 			</Page>
 		</pages>
