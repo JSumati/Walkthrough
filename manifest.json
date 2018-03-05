@@ -1,45 +1,51 @@
 {
-	"_version":"1.8.0",
-	"sap.app":{
-	    "id":"Walkthrough",
-		"type":"application",
-		"i18n":"i18n/i18n.properties",
-		"title":"{{appTitle}}",
-		"description":"{{appDescription}}",
-		"applicationVersion":{
-			"version":"1.0.0"
-		 }
-    },
-    "sap.ui":{
-        "technology":"UI5",
-    	"deviceTypes":{
-    	    "desktop":true,
-    		"tablet":true,
-    		"phone":true
-    	}
-    },
-    "sap.ui5": {
-        "rootView":{
-    	    "viewName":"Walkthrough.view.View1",
-    		"type":"XML",
-    		"async":true,
-    		"id":"view1"
-    	},
-    	"dependencies":{
-    		"minUI5Version":"1.30",
-    		"libs":{
-    			"sap.m":{}
-    		}
-    	},
-    	"models":{
-    		"i18n":{
-    			"type":"sap.ui.model.resource.ResourceModel",
-    			"settings":{
-    				"bundleName":"Walkthrough.i18n.i18n"
-    			}
-    		}
-    	}
-    }
-}    
-    	
-	
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "Walkthrough",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "Walkthrough.view.View1",
+			"type": "XML",
+			"async": true,
+			"id": "view1"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {
+					"minVersion": ""
+				}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "Walkthrough.i18n.i18n"
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	}
+}

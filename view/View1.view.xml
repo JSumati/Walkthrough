@@ -1,18 +1,32 @@
 <mvc:View
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
-	controllerName="Walkthrough.controller.View1">
-	<Button
-	text="{i18n>buttonText}"
-	press="onShowHello"/>
-	<Input 
-		value="{/recipient/name}"
-		description="Hello {/recipient/name}"
-		valueLiveUpdate="true"
-		width="60%"/>
-	<Input
-		value="{/recipient/personality}"
-		description="{/recipient/personality}"
-		valueLiveUpdate="true"
-		width="60%"/>
+	controllerName="Walkthrough.controller.View1"
+	displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>homePageTitle}">
+				<content>
+					<Panel
+						headerText="{i18n>helloPanelTitle}"
+						class="sapUiResponsiveMargin"
+						width="auto">
+						<content>
+							<Button
+								text="{i18n>buttonText}"
+								press="onShowHello"
+								class="sapUiSmallMarginEnd"/>
+							<Input 
+								value="{/recipient/name}"
+								valueLiveUpdate="true"
+								width="60%"/>
+						    <Text
+								text="Hello {/recipient/name}"
+								class="sapUiSmallMargin"/>
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>
