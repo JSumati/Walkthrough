@@ -1,0 +1,18 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="Walkthrough.controller.View1">
+	<Button
+	text="{i18n>buttonText}"
+	press="onShowHello"/>
+	<Input 
+		value="{/recipient/name}"
+		description="Hello {/recipient/name}"
+		valueLiveUpdate="true"
+		width="60%"/>
+	<Input
+		value="{/recipient/personality}"
+		description="{/recipient/personality}"
+		valueLiveUpdate="true"
+		width="60%"/>
+</mvc:View>
