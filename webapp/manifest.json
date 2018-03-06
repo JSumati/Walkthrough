@@ -41,6 +41,12 @@
 				"settings": {
 					"bundleName": "Walkthrough.i18n.i18n"
 				}
+			},
+			"invoice": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"uri": "Invoices.json",
+				"preload": false
 			}
 		},
 		"contentDensities": {

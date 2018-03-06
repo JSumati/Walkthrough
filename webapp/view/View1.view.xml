@@ -13,6 +13,7 @@
 				</headerContent>
 				<content>
 					<mvc:XMLView viewName="Walkthrough.view.HelloPanel"/>
+					<mvc:XMLView viewName="Walkthrough.view.InvoiceList"/>
 				</content>
 			</Page>
 		</pages>
