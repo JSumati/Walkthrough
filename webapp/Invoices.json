@@ -4,7 +4,7 @@
 			"ProductName": "Eyeliner",
 			"Quantity": 12,
 			"ExtendedPrice": 500.50,
-			"Shippername": "Fun Inc.",
+			"ShipperName": "Fun Inc.",
 			"ShippedDate": "2015-04-01T00:00:00",
 			"status": "A"
 		},
@@ -12,7 +12,7 @@
 			"ProductName": "Enamel",
 			"Quantity": 25,
 			"ExtendedPrice": 300.67,
-			"Shippername": "Lakme",
+			"ShipperName": "Lakme",
 			"ShippedDate": "2015-02-18T00:00:00",
 			"status": "B"
 		},
@@ -20,7 +20,7 @@
 			"ProductName": "Lipstick",
 			"Quantity": 35,
 			"ExtendedPrice": 450.50,
-			"Shippername": "Babylips",
+			"ShipperName": "Babylips",
 			"ShippedDate": "2015-04-12T00:00:00",
 			"status": "C"
 		},
@@ -28,7 +28,7 @@
 			"ProductName": "Kajal",
 			"Quantity": 10,
 			"ExtendedPrice": 200.50,
-			"Shippername": "Colossal",
+			"ShipperName": "Colossal",
 			"ShippedDate": "2015-04-12T00:00:00",
 			"status": "A"
 		},
@@ -36,7 +36,7 @@
 			"ProductName": "Mascara",
 			"Quantity": 22,
 			"ExtendedPrice": 600.50,
-			"Shippername": "Ravlon",
+			"ShipperName": "Ravlon",
 			"ShippedDate": "2015-01-27T00:00:00",
 			"status": "A"
 		}]
