@@ -1,5 +1,6 @@
 sap.ui.define([
-	"sap/ui/core/util/MockServer"
+	"sap/ui/core/util/MockServer",
+	"sap/m/MessageToast"
 	], function(MockServer) {
 		"use strict";
 		return {
