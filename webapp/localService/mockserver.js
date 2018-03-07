@@ -6,17 +6,17 @@ sap.ui.define([
 			init : function(){
 				//create
 				var oMockServer = new MockServer({
-					rootUri : "/destinations/northwind/V2/Northwind/Northwind.svc/"
+					rootUri : "/destinations/Northwind/V2/Northwind/Northwind.svc/"
 				});
 				var oUriParameters = jQuery.sap.getUriParameters();
 				//configure
 				MockServer.config({
 					autoRespond : true,
-					autoRespondafter : oUriParameters.get("serverDelay") || 1000
+					autoRespondAfter : oUriParameters.get("serverDelay") || 1000
 				});
 				//simulate
-				var sPath = jQuery.sap.getModulePath("Walkthrough.localServer");
-				oMockServer.simulate(sPath + "/metadata.xml", sPath + "/metadata");
+				var sPath = jQuery.sap.getModulePath("Walkthrough.localService");
+				oMockServer.simulate(sPath + "/metadata.xml", sPath + "/mockdata");
 				//start
 				oMockServer.start();
 			}
