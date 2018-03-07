@@ -1,7 +1,7 @@
 {
   "mockpreview": {
     "loadJSONFiles": true,
-    "mockUri": "/destinations/Northwind/v2/Northwind/Northwind.svc/",
+    "mockUri": "/destinations/Northwind/V2/Northwind/Northwind.svc/",
     "metadataFilePath": "../localService/metadata.xml",
     "loadCustomRequests": false,
     "mockRequestsFilePath": ""

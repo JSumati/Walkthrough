@@ -1,6 +1,5 @@
 sap.ui.define([
-	"sap/ui/core/util/MockServer",
-	"sap/m/MessageToast"
+	"sap/ui/core/util/MockServer"
 	], function(MockServer) {
 		"use strict";
 		return {
@@ -20,6 +19,7 @@ sap.ui.define([
 				oMockServer.simulate(sPath + "/metadata.xml", sPath + "/mockdata");
 				//start
 				oMockServer.start();
+				
 			}
 		};
 	});

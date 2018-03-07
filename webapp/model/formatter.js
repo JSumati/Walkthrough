@@ -7,7 +7,7 @@ sap.ui.define([], function(){
 				case "A":
 						return oResourceBundle.getText("invoiceStatusA");
 				case "B":
-						return oResourceBundle.gettext("invoiceStatusB");
+						return oResourceBundle.getText("invoiceStatusB");
 				case "C":
 						return oResourceBundle.getText("invoiceStatusC");
 				default:
