@@ -3,7 +3,9 @@
 	xmlns:mvc = "sap.ui.core.mvc"
 	controllerName = "Walkthrough.controller.Detail">
 	<Page 
-		title = "{i18n>detailPageTitle}">
+		title = "{i18n>detailPageTitle}"
+		showNavButton = "true"
+		navButtonPress = "onNavBack">
 		<ObjectHeader
 			intro = "{invoice>ShipperName}"
 			title = "{invoice>ProductName}"/>
