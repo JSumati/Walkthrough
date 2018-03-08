@@ -1,7 +1,24 @@
 {
   "run": [
     {
-      "filePath": "/webapp/test/unit/unitTests.qunit.html",
+      "filePath": "/webapp/test/integration/opaTests.qunit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "qunitrunner",
+        "id": 3110369,
+        "displayName": "Run opaTests.qunit.html 1",
+        "lastRunTimeStamp": 1520485632009
+      }
+    },
+    {
+      "filePath": "/webapp/test/integration/opaTests.qunit.html",
       "previewMode": 1,
       "dataMode": 1,
       "workspace": "withoutWorkspace",
@@ -13,9 +30,9 @@
       "backendSystem": [],
       "_metadata": {
         "runnerId": "webapprunner",
-        "id": 993529,
-        "displayName": "Run unitTests.qunit.html",
-        "lastRunTimeStamp": 1520482756257
+        "id": 596836,
+        "displayName": "Run opaTests.qunit.html",
+        "lastRunTimeStamp": 1520485370643
       }
     },
     {
@@ -32,7 +49,25 @@
         "runnerId": "qunitrunner",
         "id": 1211727,
         "displayName": "Run mockServer.html 1",
-        "lastRunTimeStamp": 1520478558005
+        "lastRunTimeStamp": 1520483048701
+      }
+    },
+    {
+      "filePath": "/webapp/test/unit/unitTests.qunit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 993529,
+        "displayName": "Run unitTests.qunit.html",
+        "lastRunTimeStamp": 1520482756257
       }
     },
     {
