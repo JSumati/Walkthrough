@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/model/json/JSONModel",
-	"Walkthrough/controller/HelloDialog"
-	], function(UIComponent, JSONModel, HelloDialog){
+	"Walkthrough/controller/HelloDialog",
+	"sap/ui/Device"
+	], function(UIComponent, JSONModel, HelloDialog, Device){
 		"use strict";
 		return UIComponent.extend("Walkthrough.Component",{
 			metadata:{
@@ -18,6 +19,14 @@ sap.ui.define([
 				};
 				var oModel = new JSONModel(oData);
 				this.setModel(oModel);
+				
+				//disable batch grouping for V2 API of the northwind service
+				this.getModel("invoice").setUseBatch(false);
+				
+				//set device model
+				var oDeviceModel = new JSONModel(Device);
+				oDeviceModel.setDefaultBindingMode("OneWay");
+				this.setModel(oDeviceModel, "device");
 				
 				//set Dialog
 				this._helloDialog = new HelloDialog(this.getRootControl());
