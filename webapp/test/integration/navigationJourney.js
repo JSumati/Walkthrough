@@ -21,4 +21,3 @@ sap.ui.require([
 			and.iTeardownMyAppFrame();
 	});
 });
- 

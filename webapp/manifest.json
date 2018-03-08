@@ -67,16 +67,35 @@
 		},
 		"routing": {
 			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
 				"viewPath": "Walkthrough.view",
 				"controlAggregation": "pages",
-				"controlId": "walkthrough"
+				"controlId": "app",
+				"async": true
 			},
-			"routes": [{
-				"name": "route name",
+			"routes": [
+				{
 				"pattern": "",
-				"titleTarget": "",
-				"greedy": false
-			}]
+				"name": "overview",
+				"target": "overview"
+			},
+				{
+				"pattern": "detail/{invoicePath}",
+				"name": "detail",
+				"target": "detail"
+			}
+			],
+			"targets": {
+				"overview": {
+					"viewID": "overview",
+					"viewName": "Overview"
+				},
+				"detail":{
+					"viewID": "detail",
+					"viewName": "Detail"
+				}
+			}
 		}
 	}
 }

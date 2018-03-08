@@ -3,19 +3,5 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	controllerName="Walkthrough.controller.View1"
 	displayBlock="true">
-	<App class="myAppDemoWT">
-		<pages>
-			<Page title="{i18n>homePageTitle}">
-				<headerContent>
-					<Button
-						icon="sap-icon://hello-world"
-						press="onOpenDialog"/>
-				</headerContent>
-				<content>
-					<mvc:XMLView viewName="Walkthrough.view.HelloPanel"/>
-					<mvc:XMLView viewName="Walkthrough.view.InvoiceList"/>
-				</content>
-			</Page>
-		</pages>
-	</App>
+	<App class="myAppDemoWT" id="app"/>
 </mvc:View>
