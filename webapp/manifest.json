@@ -9,12 +9,12 @@
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
-		"dataSources" : {
+		"dataSources": {
 			"invoiceRemote": {
-				"uri" : "/destinations/Northwind/V2/Northwind/Northwind.svc/",
-				"type" : "OData",
-				"settings" : {
-					"odataVersion" : "2.0"
+				"uri": "/destinations/Northwind/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
 				}
 			}
 		}
@@ -53,7 +53,6 @@
 			},
 			"invoice": {
 				"dataSource": "invoiceRemote"
-				
 			}
 		},
 		"contentDensities": {
@@ -64,6 +63,19 @@
 			"css": [{
 				"uri": "css/style.css",
 				"id": "custom"
+			}]
+		},
+		"routing": {
+			"config": {
+				"viewPath": "Walkthrough.view",
+				"controlAggregation": "pages",
+				"controlId": "walkthrough"
+			},
+			"routes": [{
+				"name": "route name",
+				"pattern": "",
+				"titleTarget": "",
+				"greedy": false
 			}]
 		}
 	}
