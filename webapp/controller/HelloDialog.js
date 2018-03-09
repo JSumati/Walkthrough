@@ -24,6 +24,9 @@ sap.ui.define([
 					oDialog = sap.ui.xmlfragment(oView.getId(), "Walkthrough.view.HelloDialog", oFragmentController);
 					//connect dialog to the root view of this component (models, lifecycle)
 					oView.addDependent(oDialog);
+					
+					//forward compact/cozy style into Dialog
+					jQuery.sap.syncStyleClass(oView.getController().getOwnerComponent().getContentDensityClass(), oView, oDialog);
 				}
 				oDialog.open();
 			}
