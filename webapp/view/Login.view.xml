@@ -1,0 +1,35 @@
+<mvc:View 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="Walkthrough.controller.View1"
+	displayBlock="true" 
+	xmlns="sap.m">
+	<App>
+		<pages>              
+			<Panel>
+				<content>
+				<html:div style="text-align:center">
+					<VBox>
+					<Text text="Email"/>
+					<Input 
+						placeholder="email@example.com"
+						type="Email"
+						width="40%"/>
+						<Text text="Password"/>
+					<Input 
+						placeholder="Password"
+						type="Password"
+						width="40%"/>
+					<Button
+						text="Login"
+						press="onShowHello"
+						showNav="true"
+						class="sapUiSmallMarginEnd"/>
+					</VBox>
+				</html:div>
+				</content>
+			</Panel>
+		</pages>
+		</App>
+	
+</mvc:View>

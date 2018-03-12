@@ -9,6 +9,10 @@ sap.ui.define([
 			},
 			onOpenDialog : function(){
 				this.getOwnerComponent().openHelloDialog();
+			},
+			onShowHello: function(oEvent){
+				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+				oRouter.navTo("overview");
 			}
 		});
 	});
