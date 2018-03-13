@@ -105,9 +105,9 @@
 			
 				"detail":{
 					"viewID": "detail",
-					"viewName": "Detail"
+					"viewName": "Detail",
+					"transition": "flip"
 				}
-			
 			}
 		}
 	}

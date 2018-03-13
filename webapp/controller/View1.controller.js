@@ -22,14 +22,6 @@ sap.ui.define([
 				
 			
 			},
-			preventBack: function(){
-				window.history.forward();
-				window.onunload(null);
-				
-			},
-			
-				
-						
 			
 			//For the Header Open Dialog Button
 			onOpenDialog : function(){
@@ -55,8 +47,8 @@ sap.ui.define([
 				});
 				if(!bValidationError){
 						var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-						oRouter.navTo("overview"); 
-						setTimeout("preventBack", 0);
+						oRouter.navTo("overview", null, true); 
+					
 					
 				} else {
 					MessageBox.alert("A validation error has occured. Complete your Input First");
