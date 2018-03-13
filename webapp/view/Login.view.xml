@@ -5,7 +5,7 @@
 	displayBlock="true" 
 	xmlns="sap.m">
 	<App>
-		<pages>              
+		<pages>
 			<Panel>
 				<content>
 				<html:div style="text-align:center">
@@ -14,12 +14,31 @@
 					<Input 
 						placeholder="email@example.com"
 						type="Email"
-						width="40%"/>
-						<Text text="Password"/>
+						id="emailInput"
+						valueStateText="Email must be a valid mail address."
+						width="40%"
+						value="{
+								path : '/email',
+								type : '.customEmailType'
+						}"
+					/>
+					<Text text="Password"/>
 					<Input 
 						placeholder="Password"
 						type="Password"
-						width="40%"/>
+						id="passwordInput"
+						width="40%"
+						value="{
+							path: '/password',
+							type: 'sap.ui.model.type.String',
+							constraints: {
+							minlength : 4,
+							maxlength : 10
+							}
+						}"
+						valueStateText="Password must not be empty. Maximum 10 characters."
+				
+					/>
 					<Button
 						text="Login"
 						press="onShowHello"

@@ -76,9 +76,9 @@
 			},
 			"routes": [
 				{
-					"pattern":"",
-					"name":"login",
-					"target":"login"
+					"pattern": "",
+					"name": "login",
+					"target": "login"
 				},
 				{
 				"pattern": "overview",
@@ -92,20 +92,22 @@
 			}
 			],
 			"targets": {
-				"login":{
-					"viewID":"login",
-					"viewName":"Login"
+				"login": {
+					"viewID": "login",
+					"viewName": "Login"
 					
 				},
-			
+				
 				"overview": {
 					"viewID": "overview",
 					"viewName": "Overview"
 				},
+			
 				"detail":{
 					"viewID": "detail",
 					"viewName": "Detail"
 				}
+			
 			}
 		}
 	}
