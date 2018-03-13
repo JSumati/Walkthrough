@@ -21,7 +21,7 @@ sap.ui.define([
 				this.setModel(oModel);
 				
 				//disable batch grouping for V2 API of the northwind service
-				this.getModel("invoice").setUseBatch(false);
+				//this.getModel("invoice").setUseBatch(false);
 				
 				//set device model
 				var oDeviceModel = new JSONModel(Device);
