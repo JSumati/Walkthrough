@@ -15,6 +15,21 @@ sap.ui.define([
 			});
 			this.getView().setModel(oViewModel, "view");
 		},
+		
+		
+		//to count the number of products/rows
+		onUpdateFinished: function(oEvent){
+			var sTitle = "Products",
+				oTable = this.getView().byId("invoiceList");
+				if(oTable.getBinding("items").isLengthFinal()) {
+					var iCount = oEvent.getParameter("total"),
+						iItems = oTable.getItems().length;
+						sTitle += "(" + iItems + "/" + iCount + ")";
+				}
+			this.getView().byId("title").setText(sTitle);
+			
+		},
+		
 		onFilterInvoices : function (oEvent) {
 			var aFilter = [];
 			var sQuery = oEvent.getParameter("query");

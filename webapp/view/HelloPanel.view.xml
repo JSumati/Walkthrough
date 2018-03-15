@@ -2,7 +2,7 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	controllerName="Walkthrough.controller.HelloPanel">
-	<Panel
+<!--	<Panel
 		headerText="{i18n>helloPanelTitle}"
 		class="sapUiResponsiveMargin"
 		width="auto"
@@ -26,5 +26,5 @@
 				htmlText="Hello {/recipient/name}"
 				class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
 		</content>
-	</Panel>
+	</Panel>-->
 </mvc:View>

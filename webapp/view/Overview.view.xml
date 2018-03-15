@@ -5,8 +5,9 @@
 	<Page title = "{i18n>homePageTitle}">
 		<headerContent>
 			<Button
-				icon = "sap-icon://hello-world"
-				press = "onOpenDialog"/>
+				width = "3rem"
+				icon = "sap-icon://log"
+				press = "logOut"/>
 		</headerContent>
 		<content>
 			<mvc:XMLView viewName = "Walkthrough.view.HelloPanel"/>

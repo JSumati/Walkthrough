@@ -21,6 +21,15 @@ sap.ui.define([
 						model: "invoice"
 					});
 			},
+				
+			logOut: function(oEvent){
+					var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+					oRouter.navTo("login", null, true); 
+				
+			},
+			
+			
+			
 			onNavBack: function() {
 				var oHistory = History.getInstance();
 				var sPreviousHash = oHistory.getPreviousHash();

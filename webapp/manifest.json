@@ -95,7 +95,8 @@
 			"targets": {
 				"login": {
 					"viewID": "login",
-					"viewName": "Login"
+					"viewName": "Login",
+					"transition": "slow show"
 					
 				},
 				
